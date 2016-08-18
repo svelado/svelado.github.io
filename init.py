@@ -7,7 +7,7 @@ mysite = Flask(__name__)
  
 @mysite.route('/')
 def main():
-	print('Launching home screen ')
+	print('Launching website ')
 	return render_template('/main.html')
 
 if __name__ == '__main__':

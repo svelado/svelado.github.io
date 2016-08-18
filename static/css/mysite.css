@@ -1,8 +1,10 @@
+
 html {
 	margin-left: 350px;
 	font-family: 'Ubuntu', sans-serif;
 	background-color: #37474F;
 }
+
 body {
 	display: block;
 	background-color: #37474F;
@@ -18,41 +20,82 @@ div.content {
 	color:#FAFAFA;
 }
 
-
-#favquote {
-	padding-top: 200px;
-	padding-bottom: 200px;
-	text-align: center;
-	color:#FAFAFA;
-}
-
-
+/* Navbar Elements*/
 div.navbar {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	position:fixed;
-	color:#CCFF90;
 	bottom:0;
 	left:75px;
 	width:250px;
 	height: 100%;
 	padding-top: 100px;
 	padding-left: 25px;
+ 	color:#FAFAFA;
 	background-color:#90A4AE;
 }
 
-div.navbar h1 a {
-	color:#CCFF90;
-	hover: #F44336;
+#namelink {
+	font-family: 'Ubuntu',sans-serif;
+	color:#37474F;
 
 }
 
- a:hover {
- 	color:#F44336;
- }
+#namelink:hover{
+ 	color:#FAFAFA;
+}
 
- a:link, a:visited{
- 	color:#00E5FF;
- }
+#biolink, #explink, #prolink, #reslink {
+	color:#FAFAFA;
+}
+
+
+/*Quotes CSS*/
+ #favquote {
+	font-family: 'Oswald',sans-serif;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	text-align: center;
+	color:#FAFAFA;
+}
+
+/*Bio CSS*/
+#bio {
+
+}
+
+#bio h2, #biolink:hover {
+	color:#BA68C8;
+}
+
+
+/*Experience CSS*/
+#exp {
+
+}
+
+#exp h2, #explink:hover {
+	color:#64B5F6;
+}
+
+/*Projects CSS*/
+#projects {
+
+}
+
+#projects h2,  #prolink:hover {
+	color:#C5E1A5
+
+;
+}
+
+/*Resume CSS*/
+#resume {
+
+}
+
+#resume h2,  #reslink:hover {
+	color:#E57373;
+}
 
 
 
