@@ -1,0 +1,35 @@
+html {
+	height: 100%;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #37474F;
+}
+body {
+	height: 100%;
+	overflow: hidden;
+	display: inline;
+}
+
+div.navbar {
+	font-family: 'Ubuntu', sans-serif;
+	position:fixed;
+	color:#CCFF90;
+	bottom:0;
+	left:75px;
+	width:350px;
+	height: 100%;
+	padding-top: 175px;
+	padding-left: 25px;
+	background-color:#90A4AE;
+}
+
+ div.navbar ul li h2 {
+ 	color: #00E5FF;
+ 	text-decoration: :underline;
+ }
+
+ a:link, a:visited {
+ 	color:#00E5FF;
+ }
+
+
+
