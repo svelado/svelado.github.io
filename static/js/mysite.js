@@ -47,7 +47,6 @@ function quoteChecker(quotes, authors) {
 // Selects the index of the quote
 function selectIndex (quotes) {
 	var index = Math.floor((Math.random() * quotes.length) + 1);
-	console.log('The selected index is ' + index);
 	if(index > quotes.length - 1){
 		index = index - 1;
 	}
@@ -57,19 +56,25 @@ function selectIndex (quotes) {
 
 function colorSelect (colors) {
 	var index = Math.floor((Math.random() * 4) + 1);
-	if(index > 4) { 
+	if(index > 3) { 
 		index = index - 1;
 	}
 	return index;
 }
 
+function debug (quote,author,color) {
+	console.log('The color is ' + color);
+	console.log('The quote is ' + quote);
+	console.log('The author is ' + author);
+}
+
 init();
-quoteChecker(quotes,authors);
 var quoteIndex = selectIndex(quotes);
 var quote = '"' + quotes[quoteIndex] + '"';
 var author = authors[quoteIndex];
 var colorIndex = colorSelect(colors);
 var color = colors[colorIndex];
+debug(quote,author,color);
 
 
 
