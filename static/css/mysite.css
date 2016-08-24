@@ -15,9 +15,11 @@ div {
 }
 
 div.content {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	color:#FAFAFA;
+	padding-right: 50px;
+	font-size: medium;
 }
 
 /* Navbar Elements*/
@@ -63,8 +65,9 @@ div.navbar {
 
 }
 
-#bio h2, #biolink:hover {
+#bio h1, #biolink:hover {
 	color:#BA68C8;
+
 }
 
 
@@ -73,7 +76,7 @@ div.navbar {
 
 }
 
-#exp h2, #explink:hover {
+#exp h1, #explink:hover {
 	color:#64B5F6;
 }
 
@@ -82,7 +85,7 @@ div.navbar {
 
 }
 
-#projects h2,  #prolink:hover {
+#projects h1,  #prolink:hover {
 	color:#C5E1A5
 
 ;
@@ -93,7 +96,7 @@ div.navbar {
 
 }
 
-#resume h2,  #reslink:hover {
+#resume h1,  #reslink:hover {
 	color:#E57373;
 }
 
