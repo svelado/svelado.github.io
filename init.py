@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 
 mysite = Flask(__name__)
- 
+  
 @mysite.route('/')
 def main():
 	print('Launching website ')

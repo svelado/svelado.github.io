@@ -23,19 +23,20 @@ var authors = [
 
 ];
 
+// Color list
 var colors = [
 	'#BA68C8',
 	'#64B5F6',
 	'#C5E1A5',
 	'#E57373',
-]
+];
 
 
 function init () {
 	console.log("JS Started");
 }
 
-// Makes sure there are enough authors for the quotes
+// Makes sure there are enough authors for the quotes if I ever add more
 function quoteChecker(quotes, authors) {
 	if (quotes.length == authors.length){
 	console.log('Quotes and authors match');
@@ -54,6 +55,7 @@ function selectIndex (quotes) {
 
 }
 
+// Selects the index of the colors
 function colorSelect (colors) {
 	var index = Math.floor((Math.random() * 4) + 1);
 	if(index > 3) { 
@@ -62,6 +64,7 @@ function colorSelect (colors) {
 	return index;
 }
 
+// Console output to debug if necessary
 function debug (quote,author,color) {
 	console.log('The color is ' + color);
 	console.log('The quote is ' + quote);
@@ -75,6 +78,7 @@ var author = authors[quoteIndex];
 var colorIndex = colorSelect(colors);
 var color = colors[colorIndex];
 debug(quote,author,color);
+
 
 
 
