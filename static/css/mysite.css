@@ -8,6 +8,7 @@ html {
 body {
 	display: block;
 	background-color: #37474F;
+	font-family:'Ubuntu',sans-serif;
 }
 
 div {
@@ -99,8 +100,3 @@ div.navbar {
 #resume h1,  #reslink:hover {
 	color:#E57373;
 }
-
-
-
-
-
