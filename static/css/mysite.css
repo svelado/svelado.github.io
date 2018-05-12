@@ -1,14 +1,13 @@
 
 html {
 	margin-left: 350px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background-color: #37474F;
 }
 
 body {
 	display: block;
 	background-color: #37474F;
-	font-family:'Ubuntu',sans-serif;
 }
 
 div {
@@ -35,6 +34,12 @@ div.navbar {
 	padding-left: 25px;
  	color:#FAFAFA;
 	background-color:#90A4AE;
+}
+
+u1 {
+	list-style-type: : none;
+	margin: 0;
+	padding: 0;
 }
 
 #namelink {
