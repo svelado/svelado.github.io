@@ -24,7 +24,7 @@ div.content {
 
 /* Navbar Elements*/
 div.navbar {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	position:fixed;
 	bottom:0;
 	left:75px;
@@ -39,7 +39,7 @@ div.navbar {
 
 
 #namelink {
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Ubuntu',sans-serif;
 	color:#37474F;
 
 }
