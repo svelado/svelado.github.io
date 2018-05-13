@@ -34,17 +34,12 @@ div.navbar {
 	padding-left: 25px;
  	color:#FAFAFA;
 	background-color:#90A4AE;
-	u1 {
-		list-style-type: : none;
-		margin: 0;
-		padding: 0;
-	}
 }
 
 
 
 #namelink {
-	font-family: 'Ubuntu',sans-serif;
+	font-family: 'Roboto',sans-serif;
 	color:#37474F;
 
 }
