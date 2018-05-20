@@ -1,7 +1,15 @@
+/* Class Settings*/
 body {
 	display: block;
 	background-color: #ededed;
 
+}
+
+div.content {
+	margin-left:240px;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 100%;
 }
 
 /* Navbar Elements*/
@@ -101,37 +109,12 @@ padding-left: 10px;
 	transition-duration: 500ms;
 	border-left-width: 10px;
 }
-/*Quotes CSS*/
- /* #favquote {
-	font-family: 'Oswald',sans-serif;
-	padding-top: 200px;
-	padding-bottom: 200px;
+
+/* Quotes Elements*/
+ #favquote {
+	font-family: 'Ubuntu',sans-serif;
 	text-align: center;
-	color:#FAFAFA;
-} */
-
-/* #bio {
-
+	padding-top: 20%;
+	padding-bottom: 25%;
+	color:#000000;
 }
-
-#bio h1, #biolink:hover {
-	color:#BA68C8;
-
-}
-
-
-#exp {
-
-}
-
-#exp h1, #explink:hover {
-	color:#64B5F6;
-}
-
-#projects {
-
-}
-
-#projects h1,  #prolink:hover {
-	color:#C5E1A5;
-} */
