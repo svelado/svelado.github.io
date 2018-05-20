@@ -1,69 +1,116 @@
-
-html {
-	margin-left: 350px;
-	font-family: 'Roboto', sans-serif;
-	background-color: #37474F;
-}
-
 body {
 	display: block;
-	background-color: #37474F;
-}
+	background-color: #ededed;
 
-div {
-	background-color: #37474F;
-}
-
-div.content {
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color:#FAFAFA;
-	padding-right: 50px;
-	font-size: medium;
 }
 
 /* Navbar Elements*/
-div.navbar {
-	font-family: 'Ubuntu', sans-serif;
-	position:fixed;
-	bottom:0;
-	left:75px;
-	width:250px;
+#navbar {
+	background-color: #aaaaaa;
 	height: 100%;
-	padding-top: 100px;
-	padding-left: 25px;
- 	color:#FAFAFA;
-	background-color:#90A4AE;
+	position:fixed;
+	top: 0;
+	padding-top: 5%;
+	left:40px;
+	width: 200px;
+}
+
+#navbar h1 {
+padding-left: 10px;
+}
+
+#navbar ul {
+	list-style-type: none;
+	padding-left: 20px;
+
 }
 
 
+
+/*  Removes the link underlining from any link */
+#navbar a {
+	text-decoration: none;
+}
 
 #namelink {
-	font-family: 'Ubuntu',sans-serif;
-	color:#37474F;
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
 
 }
 
-#namelink:hover{
- 	color:#FAFAFA;
+#namelink:hover {
+	color: #000000;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
 }
 
-#biolink, #explink, #prolink, #reslink {
-	color:#FAFAFA;
+#biolink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
 }
 
+#biolink:hover {
+	color: #ba66b9;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
 
+#explink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
+}
+
+#explink:hover {
+	color: #4242ed;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
+
+#prolink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
+}
+
+#prolink:hover {
+	color: #a6e070;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
+
+#reslink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
+}
+
+#reslink:hover {
+	color: #e0707e;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
 /*Quotes CSS*/
- #favquote {
+ /* #favquote {
 	font-family: 'Oswald',sans-serif;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
 	color:#FAFAFA;
-}
+} */
 
-/*Bio CSS*/
-#bio {
+/* #bio {
 
 }
 
@@ -73,7 +120,6 @@ div.navbar {
 }
 
 
-/*Experience CSS*/
 #exp {
 
 }
@@ -82,22 +128,10 @@ div.navbar {
 	color:#64B5F6;
 }
 
-/*Projects CSS*/
 #projects {
 
 }
 
 #projects h1,  #prolink:hover {
-	color:#C5E1A5
-
-;
-}
-
-/*Resume CSS*/
-#resume {
-
-}
-
-#resume h1,  #reslink:hover {
-	color:#E57373;
-}
+	color:#C5E1A5;
+} */
