@@ -1,103 +1,171 @@
-
-html {
-	margin-left: 350px;
-	font-family: 'Roboto', sans-serif;
-	background-color: #37474F;
-}
-
+/* Class Settings*/
 body {
 	display: block;
-	background-color: #37474F;
-}
+	background-color: #ededed;
+	font-family: "Ubuntu",sans-serif;
 
-div {
-	background-color: #37474F;
 }
 
 div.content {
-	padding-top: 50px;
-	padding-bottom: 100px;
-	color:#FAFAFA;
-	padding-right: 50px;
-	font-size: medium;
+	margin-left:240px;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 100%;
+	font-family: "Ubuntu",sans-serif;
 }
 
 /* Navbar Elements*/
-div.navbar {
-	font-family: 'Ubuntu', sans-serif;
-	position:fixed;
-	bottom:0;
-	left:75px;
-	width:250px;
+#navbar {
+	font-family: "Ubuntu",sans-serif;
+	background-color: #aaaaaa;
 	height: 100%;
-	padding-top: 100px;
-	padding-left: 25px;
- 	color:#FAFAFA;
-	background-color:#90A4AE;
+	position:fixed;
+	top: 0;
+	padding-top: 5%;
+	left:40px;
+	width: 200px;
+}
+
+#navbar h1 {
+padding-left: 10px;
+}
+
+#navbar ul {
+	list-style-type: none;
+	padding-left: 20px;
+
 }
 
 
+
+/*  Removes the link underlining from any link */
+#navbar a {
+	text-decoration: none;
+}
 
 #namelink {
-	font-family: 'Ubuntu',sans-serif;
-	color:#37474F;
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
 
 }
 
-#namelink:hover{
- 	color:#FAFAFA;
+#namelink:hover {
+	color: #000000;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
 }
 
-#biolink, #explink, #prolink, #reslink {
-	color:#FAFAFA;
+#biolink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
 }
 
+#biolink:hover {
+	color: #ba66b9;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
 
-/*Quotes CSS*/
+#explink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
+}
+
+#explink:hover {
+	color: #4242ed;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
+
+#prolink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
+}
+
+#prolink:hover {
+	color: #a6e070;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
+
+#reslink {
+	border-left-style: none;
+	color: #ededed;
+	transition-duration: 500ms;
+
+}
+
+#reslink:hover {
+	color: #e0707e;
+	border-left-style: solid;
+	transition-duration: 500ms;
+	border-left-width: 10px;
+}
+
+/* Quotes Elements*/
  #favquote {
-	font-family: 'Oswald',sans-serif;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	font-family: 'Ubuntu',sans-serif;
 	text-align: center;
-	color:#FAFAFA;
+	padding-top: 10%;
+	padding-bottom: 20%;
+	color:#000000;
 }
 
-/*Bio CSS*/
+
+/* Bio Elements */
+
 #bio {
-
+	height: 100%;
+	/* Has different top padding to center it on the screen on click */
+	padding-top: 10%;
+	padding-bottom: 20%;
+	font-size: 14px;
 }
 
-#bio h1, #biolink:hover {
-	color:#BA68C8;
-
+#bio h1 {
+	color:#ba66b9;
 }
 
+/* Experience Elements */
+#exp h1{
+	color: #4242ed
+}
 
-/*Experience CSS*/
 #exp {
-
+	padding-top: 1%;
+	padding-bottom: 20%;
 }
 
-#exp h1, #explink:hover {
-	color:#64B5F6;
+/* Projects Elements */
+
+#projects h1 {
+	color:#a6e070;
 }
 
-/*Projects CSS*/
 #projects {
-
+	padding-top: 2%;
+	padding-bottom: 20%;
 }
 
-#projects h1,  #prolink:hover {
-	color:#C5E1A5
+/* Resume Elements  */
 
-;
+#resume h1 {
+		color: #e0707e;
+		/* text-align: center; */
 }
 
-/*Resume CSS*/
 #resume {
-
-}
-
-#resume h1,  #reslink:hover {
-	color:#E57373;
+	padding-top: 2.5%;
+	padding-bottom: 20%;
 }

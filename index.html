@@ -4,23 +4,21 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Sidney M. Velado</title>
-	<link rel="icon" type="image/png" href="/static/images/wrenchIcon.png" />
-	<link rel="stylesheet" type="text/css" href="/static/css/mysite.css">
-	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="static/images/wrenchIcon.png" />
+	<link rel="stylesheet" type="text/css" href="static/css/mysite.css">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Ubuntu"
 	rel="stylesheet">
-	<script src ='/static/js/mysite.js'></script>
+	<script src ='static/js/mysite.js'></script>
 </head>
 <body>
 
 	<!-- All "Side Nav Bar" -->
 	<div class='navbar' id='navbar'>
 		<h1>
-			<a href='/' id='namelink'>Sidney M. Velado</a>
-			<script type="text/javascript">
-					document.getElementById("namelink").style.color = '#37474F';
-			</script>
+			<a href='./index.html' id='namelink'>Sidney M. <br /> Velado</a>
 		</h1>
+		<br>
 		<ul>
 			<li><h2><a href='#bio' id='biolink'>Bio</a></h2></li>
 			<br>
@@ -34,6 +32,7 @@
 
 	<!-- Favorite Quote Scroller -->
 	<div class='content' id='favquote'>
+		<img src="static/images/quotebot.png" height="250px" width="250">
 		<h1 id='quote'></h1>
 		<script type="text/javascript">
 			document.getElementById('quote').innerHTML = quote;
@@ -48,42 +47,50 @@
 
 	<!-- Bio Section -->
 	<div class='content' id='bio'>
+		<img src="static/images/biobot.png" height="100px" width="100px"
+		style="float:right;">
 		<h1>Bio</h1>
-		<img src="/static/images/me.jpg" height="425px" width="275px"
+
+		<img src="static/images/me2.jpg" height="325px" width="300px"
 		HSPACE="25" align="left">
 		<br clear="right">
 		<p>
-			My name is Sidney Velado, affectionately known as Mickey. I am
-			currently a student at Carnegie Mellon, where I am working
-			hard to become a accomplished Mechanical Engineer as well as to work
-			on my Robotics minor. I hope someday I can combine both of these
-			disciplines in order to make robots that push the boundaries of what
-			we do today.
+			My name is Sidney Velado, also known as Mickey. I am currently a
+			Mechanical Engineering and Robotics double major at Carnegie Mellon.
+			I hope someday I can combine both of these disciplines in order to make
+			robots that push the boundaries of what we do today. I'm really interested
+			 in learning more about software in Robotics, specifically computer vision.
+			  In my free time I love to watch European football and am an avid
+			supporter of the Arsenal Gunners. I also enjoy playing video games, with
+			God Of War being the latest game I binged.
 		</p>
 		<p>
-			Despite my current life in the United States, it's wasn't always my
+			Despite currently living in the United States, it's wasn't always my
 			home. I was born in Guatemala, and lived in Peru, Bolivia, and
 			finally settled in Costa Rica. I had the privilege to enjoy growing
 			up in an amazing tropical climate full of adventures. It made me
-			love the outdoors and drove my passion for soccer, as well as foster
-			my sense of Latino culture and pride.
+			love the outdoors and drove my passion for football, as well as foster
+			my sense of Latino culture and pride, which shines in everything I do at
+			Carnegie Mellon.
 		</p>
 		<p>
-			Moving to the United States however, didn't make me lose any of that
-			but only helped me expand my boundaries. I became interested in
-			new things that I continue to do now at CMU. I picked up interests
-			like lacrosse, robotics, and my social fraternity Phi Delta Theta.
+			Besides my current academics at CMU, I also have served in multiple student
+			organizations. I am active in my fraternity Phi Delta Theta where I served
+			as Social Chair as well as the IM Chair. I also serve in the Spanish and
+			Latino Student Association as the Internal Outreach Chair and as a general
+			member of the Society of Hispanic Professional Engineers.
 		</p>
 	</div>
 
 	<!-- Experience Section -->
 	<div class='content' id='exp'>
+		<img src="static/images/expbot.png" height="100px" width="175px">
 		<h1>Experience</h1>
 		<br>
 		<br>
 		<!-- Embassy Internships -->
-		<img src="/static/images/deptOfStateSeal.png">
-		<h2> Department of State: Consulate Intern (July-Aug 2013 & 2014)</h2>
+		<img src="static/images/deptOfStateSeal.png">
+		<h2> Department of State: Consulate Intern (Summer 2013 & Summer 2014)</h2>
 		<p>
 			The summer of my junior and senior year, I was an intern at the
 			United States Embassy in San José, Costa Rica. I worked for the
@@ -148,8 +155,8 @@
 		<br>
 
 		<!-- PreCollege Section -->
-		<img width='240' height='240' src="/static/images/cmuSeal.png">
-		<h2>Carnegie Mellon University Pre-College Counselor (August 2016)</h2>
+		<img width='240' height='240' src="static/images/cmuSeal.png">
+		<h2>Carnegie Mellon University Pre-College Counselor (Summer 2016)</h2>
 		<p>Pre-College Counselors are residential staff members who are
 		responsible for all non-academic experiences and activities for students
 		in the Carnegie Mellon Pre-College program. Counselors have the most
@@ -160,27 +167,49 @@
 		an entire floor of residents along with a partner and took a class to
 		advance my academic standing while holding the position of Counselor.
 		</p>
+		<br>
+		<br>
 
-	</div>
+
+
+	<!-- Biorobotics Section -->
+	<img width='240' height='300' src="static/images/RI_small.jpg">
+	<h2>Carnegie Mellon University Biorobotics Labratory (Summer 2018)</h2>
+	<p>I am currently conducting research at the Biorobotics Lab this summer.
+		I have to use a mixture of my Mechanical Engineering and Robotics skills as well as
+		picking up new ones to apply to multiple projects. Some of the skills I
+		have learned/have been using include CAD modeling of project parts,
+		machining different components, and working in a Linux (specifically
+		Ubuntu) enviorment to run an ROS based robot. I have also been learning more
+		about LQR controllers to eventually program and run the controller for a project in
+		C/C++. More updates to come after this summer!
+	</p>
+
+</div>
 
 	<!-- Projects Section -->
 	<div class='content' id='projects'>
-		<h1>Projects</h1>
+		<img src="static/images/probot.png" height="50px" width="50px">
+
+		<h1 style="float:left;">Projects</h1>
+		<br>
 		<br>
 
 		<!-- 15112 Term Project -->
-		<h2>15-112 Term Project</h2>
-		<p>My final project for the 15-112 programming course. I wanted to
-		produce a project that was possible using only the TKinter graphics.
-		I also wanted to have a project that was going to be able to demonstrate
+		<h2>Drawing World</h2>
+		<p>My final project for 15-112, Fundamentals of Programming. Our assignment
+		was to make an application in Python to present as our final project. I wanted to
+		produce a project that was possible using only the TkInter graphics.
+		But, also wanted to have a project that was going to be able to demonstrate
 		how versatile my knowledge of the language was based on our course
-		material. Finally, I also wanted something that would help me show
-		my indvidual learning of python outside of class. </p>
+		material. Finally, I also wanted something that would be fun and interesting
+		to use. </p>
 		<p>Ultimately, I created Drawing World, a Microsoft Paint-like
 		application with some added innovation such as voice controls and
 		keyboard shortcuts for an increased work flow. I also added the ability
-		of real time face tracking and image processing by using the Open CV
-		tool</p>
+		of real time face tracking and image processing by using the Open CV. Shout
+		out to my professor David Kosbie for letting me use him in the video.
+		</p>
 		<br>
 		<div style='text-align:center'>
 			<iframe width="640" height="360"
@@ -198,34 +227,34 @@
 
 		<!-- Design 1: Gripper Project -->
 		<h2>Ancient Artifact Gripper</h2>
-		<p>One of our projects for our Mechanical Engineering Design class. We were
+		<p>One of our projects for our Design class. We were
 		tasked with recovering an "ancient human artifact", an object that our professor
-		picks every year. This year our artifact wasnthe worlds first fidget spinner.
+		picks every year. This year our artifact was the world's "first fidget spinner".
 		To be exact, it was actually a large aluminum fidget spinner dummy. Our mission
 		was to build a gripper that would be strong enough to hold this artifact. Not only
-		did it have to grip the object and lift it but, it also had to grip the object as it
-		swung as a pendulum 3 times.
+		did it need to have the strength to grip the object and lift it but, it also
+		hold the objects tightly as it swung like a pendulum 3 times.
 		</p>
 		<br>
 		<div style='text-align:center'>
-			<img width='720' height='480' src="/static/images/Fidget Spinner.png">
+			<img width='720' height='480' src="static/images/Fidget Spinner.png">
 		</div>
 		<br>
 		<br>
 		<p>Our team's gripper had to fit under a motor. With certain geometric constraints
 		vertically and horizontally. Additionally, we couldn't grip the object from the
-		bottom, since it was considered a "restricted" zone. Additionally, the gripper
-		would have to be able to swing down from the side for initial placement.
+		bottom, since it was considered a "restricted" zone. So we built a design that
+		avoided these physical constraints and completed the task successfully.
 		</p>
 		<br>
 		<div style='text-align:center'>
-			<img src="/static/images/Swinging Arm.png">
+			<img src="static/images/Swinging Arm.png">
 		</div>
 		<br>
 		<p>My group and I knew that our biggest challenge was going to translate the
-		motor's torque to translational force and press against the sides of the
+		motor's torque to  a linear force of the contacts that would press against the sides of the
 		fidget spinner and hold it while it swings. Thus we came up with a design
-		that optimizes this conversion, as well as uses large bevel gears in order to
+		that optimizes this conversion, which uses large bevel gears in order to
 		be able to multiply our torque as well as translate our our motion to grip the
 		fidget spinner.
 		</p>
@@ -255,33 +284,79 @@
 			</a>
 		</div>
 
+		<h2>Urban Search and Rescue</h2>
+		<p>A project in 16-311, our Introduction to Robotics class. We were tasked with
+			and open ended project to produce a robot that would be run in a challenge
+			Urban Search and Rescue simulation. Our robot had to have a robust navigation
+			ability, with a design optimal to what we considered the most imporant things
+			that an urban search and rescue robot need. Additionally, the robot had to have
+			a microcontroller subsystem that see and project lights that used to open
+			doors as well as a light for its own navigation. Cameras were provided as
+			the main way to percieve the robot's location and control it remotely. We
+			had a checkpoint that then culminated in a final competition where we ended
+			up in the finalist round. We were allowed to use anything from our provided
+			lego mindstorms kit as well as anything 3D printed or machined as long as
+			long as it met our gemotric constraints as well as passed a drop test.
+		</p>
+
+		<p>
+		Our robot was optimized to climb the stairs in our challenge course. Our team
+		thought that if we could clear the stairs, we would be able to clear most "rubble"
+		and navigation obstacles that were presented to us. We also knew that lighting
+		would be key to give us the best camera feed that in turn provided us with
+		the best possible navigations, so we focused on those two things and ended up doing
+		really well in the competion and in the assignment. Below is a video example
+		of the same project done in 2013.</p>
+		<br>
+		<!-- Update when 2018 comes out! -->
+		<div style='text-align:center'>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/jAdNsqhE2eo"
+			frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+
 		<!-- Personal Website Project -->
-		<h2>mvelado Github.io</h2>
+		<h2>mvelado.github.io</h2>
 
 		<p>Starting my sophomore year I realized that it would be a good idea to
 		get a personal website. Whether it be for employers or any other future
 		use, a website would be a really useful project. Despite easy to use
 		websites creation services such as Wordpress or Weebly, I opted to
-		create my own website from scratch. I began to learn HTML, CSS, and Java
-		Script through internet research and Code Academy.
+		create my own website from scratch, to challenge myself and learn about
+		programming websites. I began to learn HTML, CSS, and Java
+		Script through searching the internet and practicing on my own.
 		</p>
 
-		<p>I was then ready to create and deploy my own website, the result
-		which you are using right now. I used the developer tools Bootstrap,
-		Google Fonts, and Google Colors in order to model my website after my
-		favorite Sublime 3 theme, the Materials Theme. Finally, I also learned
-		git and how to use it in order to deploy my website and have it hosted
-		on github pages for others to access.
+		<p>Once I was ready to create and deploy my own website I started working at it;
+		the result is what you are using right now. I had originally used the developer
+		tools Bootstrap, Google Fonts, and Google Colors in order to model my website after my
+		favorite Sublime 3 theme, the Materials Theme. However, I felt that it looked
+		a little weird and that the inexperience I had in web development showed.
+		Therefore I recently (May 2018) updated it to reflect what I know now. I
+		kept the same look in terms of the navigation bar and page layout, but made
+		a lot more changes. First, I changed it to a better color scheme and added
+		little robot visuals to enhance the look of the site. I also added animations to the
+		navigation bar and cleaned up the code so the spacing of the site actually
+		makes sense. Finally, I updated it with recent information and added the all
+		important copyright at the bottom.
 		</p>
 
 		This is going to the master branch .
 
-	<!-- Resume Buttons -->
-	<div class='content' id='resume'>
-		<h1>Resume</h1>
-		<object data="/static/Resume.pdf" type="application/pdf" width="100%"
-		height="700px">
+	<!-- Resume -->
+	<div  id='resume'>
+
+		<img src="static/images/resbot.png" height="100px" width="100px"
+		style="float:right;">
+		<h1 >Resume</h1>
+
+		<br> </br>
+		<object data="static/docs/resume2018.pdf" type="application/pdf" width="100%"
+		height="700px"> </object>
+		<br>
+		<p>&copy Sidney M. Velado 2018</p>
 	</div>
+
+
 
 </body>
 </html>
