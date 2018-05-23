@@ -14,6 +14,11 @@ div.content {
 	font-family: "Ubuntu",sans-serif;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /* Navbar Elements*/
 #navbar {
 	font-family: "Ubuntu",sans-serif;
