@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>16-264 Final Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Title -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<header>
+									<h1>16-264 Humanoids Final Project: V-REP Robot Simulation</h1>
+									<p>Sidney M. Velado<br> Andrew ID: svelado</p>
+							</header>
+							<ul class="actions fit" style="list-style: none">
+									<li><a id="whysimlink" href="#whysim" class="button fit">Why Sim</a></li>
+									<li><a id="proglink" href="#pro" class="button fit">Project Goals</a></li>
+									<li><a id="whyvlink" href="#whyv" class="button fit">Why V-REP</a></li>
+									<li><a id="proreslink" href="#prores" class="button fit">Project Results</a></li>
+									<li><a id="fworklink" href="#fwork"class="button fit">Future Work</a></li>
+							</ul>
+					</section>
+				
+					<section class="wrapper style1 align-left">
+						<!-- Why do we need simulations --> 
+						<div class="inner" id='whysim'>
+							<h2>Why do we need simulations?</h2>
+							<p>Simulations are very important for three main reasons. First, they allow us to experiment with different hardware components on our robots, without
+								spending hundreds or thousands of dollars, to see if they are feasible.Nothing is worse than rebuilding parts of a robot only for them 
+								not to work. Secondly, simulation helps give us a "ground truth" or expected behavior of our robot. This is significant because if our 
+								simulations shows certain results, and our hardware is showing completely different ones, it might help us find a problem with the hardware
+								of the robot or reveal a bigger problem with our assumptions. Finally, another reason simulation is important is because it helps us test out code. 
+								Once again, with expensive hardware, it is risky to try certain parts of code that could put the robot at risk. Simulation allows us to test this code 
+								without fear of breaking our robot and still producing visible results.
+							</p>
+						</div>
+
+						<!-- Project Goals -->
+						<div class="inner" id='pro'>
+							<h2>Project Goals</h2>
+							<p>I had four main goals to accomplish for this project. The first goal I wanted to meet was having a decent dynamic model of our robot. 
+								That meant having the mecanum wheels, base, and robot arm. The second goal I wanted to accomplish was to make it easy to experiment on our
+								robot. That meant being able to easily add sensors or other components to the robot and testing code with them. Then, I also wanted to 
+								make the robot controllable via a gamepad. For this, I wanted to use C++,ROS, as well as interfacing those two with the simulator. Finally,
+								My last goal was to be able to use our dynamic model and drop it in multiple environment with minimum effort, in order to be able to use it 
+								in different "worlds".  
+							</p>
+						</div>
+
+						<!-- Why VREP -->
+						<div class="inner" id="whyv">
+							<h2>Why V-REP?</h2>
+							<p>There is a myriad of simulation software available on the internet. They are all different with what features they have 
+								and what situations they are best for. Some of the most popular ones include Gazebo, Simspark,OpenRAVE, VREP and others.
+								I choose the simulator <a href="http://www.coppeliarobotics.com/">V-REP</a>. I chose it because it would fit my needs best.
+								I could build a dynamic model directly inside of V-REP, with all the components I need as well as program them to accomplish tasks.
+								Also, V-REP also has a ROS interface that would allow my robot to be controllable inside of simulation with a controller. Then, V-REP 
+								also came with a incredibly large and simple generic sensor,component, and example library that would help for experiments of different 
+								hardware on the robot as well as different robots in case we would want them to interact. Finally, in V-REP adding a robot to different worlds
+								or scenes, is as simple as copy pasting, making it incredibly useful to test under different environmnets. Finally, as an added bonus,
+								V-REP was a good choice because of its ability to simulate with different Physics engines, meaning we can test different thing under different
+								versions of Bullet or ODE.	
+							</p>
+						</div>
+						
+						<!-- Project Result  -->
+						<div class="inner" id="prores">
+							<h2>Project Results</h2>
+								<h3>Dynamic Model</h3>
+								<center>
+									<video style="max-width:70%;" src="./videos/humanoids_dynamicmodel.mp4"></video>
+									</center>
+						</div>
+
+						<!-- Future work -->
+						<div class="inner" id="fwork">
+							<h2>Future Work</h2>
+						</div>
+						
+					</section>
+	</body>
+</html>
