@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>16-350: Planning Techniques for Robotics Final Project</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+            <!-- Title -->
+            <section class="wrapper style1 align-center">
+                <div class="inner">
+                    <header>
+                        <h1>16-350: Planning Techniques for Robotics Final Project</h1>
+                        <p>Sidney M. Velado<br> Andrew ID: svelado</p>
+                    </header>
+                    <ul class="actions fit" style="list-style: none">
+                        <li><a id="prob" href="#prob" class="button fit">The Problem</a></li>
+                        <li><a id="roblink" href="#robo" class="button fit">The Robot</a></li>
+                        <li><a id="planlink" href="#plan" class="button fit">Planner</a></li>
+                        <li><a id="proreslink" href="#prores" class="button fit">Project Results</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="wrapper style1 align-left">
+            <!-- Why do we need simulations -->
+                <div class="inner" id='prob'>
+                    <h2>The Problem</h2>
+                    <p>
+                        A huge problem in the marine industry is biofouling The accumulation of biofoulers on hulls can
+                        increase both the hydrodynamic volume of a vessel and the hydrodynamic friction, leading to increased
+                        drag of up to 60%,The drag increase has been seen to decrease speeds by up to 10%, which can require
+                        up to a 40% increase in fuel to compensate.With fuel typically comprising up to half of marine transport
+                        costs, antifouling methods are estimated to save the shipping industry around $60 billion per year.
+                        Increased fuel use due to biofouling contributes to adverse environmental effects and is predicted to
+                        increase emissions of carbon dioxide and sulfur dioxide between 38 and 72% by 2020. (From
+                        <a href="https://en.wikipedia.org/wiki/Biofouling">Wikipedia</a>)
+                    </p>
+                </div>
+
+                <div class="inner" id='robo'>
+                    <h2>The Robot</h2>
+                    <p>
+                        We present our solution to the problem, the CERLAB Underwater robot. For this development stage,
+                        It's purpose is only to examine ship hulls for biofouling. This means our robot is going to be
+                        used with a camera. It has two phases of motion, the 3D motion it will be using while it is underwater
+                        and the planar 2D motion which is used when the robot attached itself to the ship hull, and depends only
+                        the omni wheels. Omni wheels mean we have control of our orientation at all times, which is important
+                        because we only have one camera. This also gives us the ability to move in any direction, regardless of our
+                        current orientation.
+                    </p>
+                    <img source="./images/project/thumbs/path_planning.jpeg" class="fit-picture"/>
+                </div>
+
+                <div class="inner" id='plan'>
+                    <h2>Planner</h2>
+                    <p>
+                        I programmed in C++, a multigoal weighted informed A* search planner. I chose this for a few goals.
+                        First, I wanted to have mutliple goals because during inspection there are always multiple areas to examine.
+                        Then, I wanted to make sure it was an informed search to improve it speed, since we want to minimize the amount
+                        of water damage. We use the euclidean distance as the heuristic. Finally, I added an additional weight to bias
+                        the planner towards unexplored areas. It is evident that that will lead to suboptimal paths, but since we want to be
+                        able to gather as much data from each dive, it's a good idea to go through unseen paths in case something we didn't
+                        know about happens to the hull, or we discover something interesting. I then used that planner and interfaced it with
+                        ROS, using my own custom messages and Rviz to visualize it.
+                    </p>
+                </div>
+                <div class="inner" id='plan'>
+                    <h2>Planner</h2>
+                    <p>
+                        Overall the results were very good. The plannar works quickly and effectively, correctly demonstrating the behavior I
+                        wanted of avoiding already used paths, but at the same time finding quick and good paths. Video below shows the demo,
+                        as well as the setup a little more in depth.
+                    </p>
+                </div>
+
+                <div>
+            </section>
+    </body>
+</html>
