@@ -27,17 +27,17 @@
 									<li><a id="fworklink" href="#fwork"class="button fit">Future Work</a></li>
 							</ul>
 					</section>
-				
+
 					<section class="wrapper style1 align-left">
-						<!-- Why do we need simulations --> 
+						<!-- Why do we need simulations -->
 						<div class="inner" id='whysim'>
 							<h2>Why do we need simulations?</h2>
 							<p>Simulations are very important for three main reasons. First, they allow us to experiment with different hardware components on our robots, without
-								spending hundreds or thousands of dollars, to see if they are feasible.Nothing is worse than rebuilding parts of a robot only for them 
-								not to work. Secondly, simulation helps give us a "ground truth" or expected behavior of our robot. This is significant because if our 
+								spending hundreds or thousands of dollars, to see if they are feasible.Nothing is worse than rebuilding parts of a robot only for them
+								not to work. Secondly, simulation helps give us a "ground truth" or expected behavior of our robot. This is significant because if our
 								simulations shows certain results, and our hardware is showing completely different ones, it might help us find a problem with the hardware
-								of the robot or reveal a bigger problem with our assumptions. Finally, another reason simulation is important is because it helps us test out code. 
-								Once again, with expensive hardware, it is risky to try certain parts of code that could put the robot at risk. Simulation allows us to test this code 
+								of the robot or reveal a bigger problem with our assumptions. Finally, another reason simulation is important is because it helps us test out code.
+								Once again, with expensive hardware, it is risky to try certain parts of code that could put the robot at risk. Simulation allows us to test this code
 								without fear of breaking our robot and still producing visible results.
 							</p>
 						</div>
@@ -45,31 +45,31 @@
 						<!-- Project Goals -->
 						<div class="inner" id='pro'>
 							<h2>Project Goals</h2>
-							<p>I had four main goals to accomplish for this project. The first goal I wanted to meet was having a decent dynamic model of our robot. 
+							<p>I had four main goals to accomplish for this project. The first goal I wanted to meet was having a decent dynamic model of our robot.
 								That meant having the mecanum wheels, base, and robot arm. The second goal I wanted to accomplish was to make it easy to experiment on our
-								robot. That meant being able to easily add sensors or other components to the robot and testing code with them. Then, I also wanted to 
+								robot. That meant being able to easily add sensors or other components to the robot and testing code with them. Then, I also wanted to
 								make the robot controllable via a gamepad. For this, I wanted to use C++,ROS, as well as interfacing those two with the simulator. Finally,
-								My last goal was to be able to use our dynamic model and drop it in multiple environment with minimum effort, in order to be able to use it 
-								in different "worlds".  
+								My last goal was to be able to use our dynamic model and drop it in multiple environment with minimum effort, in order to be able to use it
+								in different "worlds".
 							</p>
 						</div>
 
 						<!-- Why VREP -->
 						<div class="inner" id="whyv">
 							<h2>Why V-REP?</h2>
-							<p>There is a myriad of simulation software available on the internet. They are all different with what features they have 
+							<p>There is a myriad of simulation software available on the internet. They are all different with what features they have
 								and what situations they are best for. Some of the most popular ones include Gazebo, Simspark,OpenRAVE, VREP and others.
 								I choose the simulator <a href="http://www.coppeliarobotics.com/">V-REP</a>. I chose it because it would fit my needs best.
 								I could build a dynamic model directly inside of V-REP, with all the components I need as well as program them to accomplish tasks.
-								Also, V-REP also has a ROS interface that would allow my robot to be controllable inside of simulation with a controller. Then, V-REP 
-								also came with a incredibly large and simple generic sensor,component, and example library that would help for experiments of different 
+								Also, V-REP also has a ROS interface that would allow my robot to be controllable inside of simulation with a controller. Then, V-REP
+								also came with a incredibly large and simple generic sensor,component, and example library that would help for experiments of different
 								hardware on the robot as well as different robots in case we would want them to interact. Finally, in V-REP adding a robot to different worlds
 								or scenes, is as simple as copy pasting, making it incredibly useful to test under different environmnets. Finally, as an added bonus,
 								V-REP was a good choice because of its ability to simulate with different Physics engines, meaning we can test different thing under different
-								versions of Bullet or ODE.	
+								versions of Bullet or ODE.
 							</p>
 						</div>
-						
+
 						<!-- Project Result  -->
 						<div class="inner" id="prores">
 							<h2>Project Results</h2>
@@ -77,13 +77,21 @@
 								<center>
 									<video style="max-width:70%;" src="./videos/humanoids_dynamicmodel.mp4" controls></video>
 								</center>
-							
+
 								<h3>Final Robot: Gamepad Controlled</h3>
 								<center>
 										<video style="max-width:70%;" src="./videos/humanoids_working.mp4" controls></video>
 										<a id="git" href="https://github.com/svelado/HumanoidsFinalProject" class="button fit">Github Code</a></li>
 								</center>
 
+                                <h3>Demo of Robot with Suction Gripper and Block Interaction</h3>
+                                <center>
+                                    <video style="max-width:70%;" src="./videos/block_example.mp4" controls></video>
+                                    <p> Here we show a demo of the robot with a suction cup gripper. Most of the provided default grippers
+                                        do not match our actual gripper properly or have dynamic properties that are not compatible with
+                                        our model, so for testing purposes we used our suction cup gripper. In this demo we show the capabilities
+                                        of the robots movement along with it interacting with blocks, which could also be any object. </p>
+                                </center>
 
 						</div>
 
@@ -94,13 +102,13 @@
 								many improvements and side projects that can come from this. One is adding a solidworks model of the actual robot,
 								this will make the dynamics more accurate as well as making it a cosmetically better looking robot. Additionally,
 								certain scenes for testing the robot can be made as well. Then, the addition and functionality of a gripper is still missing,
-								and testing the robot with that gripper and picking up objects is very important. After that, there can also be tons of code 
-								tested for anything from the components of our robot accomplishing tasks or path planning algorithms. Finally, the 
+								and testing the robot with that gripper and picking up objects is very important. After that, there can also be tons of code
+								tested for anything from the components of our robot accomplishing tasks or path planning algorithms. Finally, the
 								robot can also be tested with built with different sensors and such in a scene as well. Overall, I hope my contribution to
 								the overall project was successful.
 							</p>
 						</div>
-						
+
 					</section>
 	</body>
 </html>
